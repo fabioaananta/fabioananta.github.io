@@ -1,0 +1,50 @@
+<html>
+    <head>
+        <title>Form </title>
+    </head>
+    <body>
+        <h3>Form Pendaftaran Admin</h3>
+        <form action="procces.php" method="POST" align="center">
+            Nama : <input type="text" name="nama" /></br>
+            Password : <input type="password" name="password"/></br> 
+            Jenis Kelamin : 
+                <input type="radio" name="Jenis_kelamin" value="Laki-laki" checked /> Laki - Laki
+                <input type="radio" name="Jenis_kelamin" value="Perempuan" /> Perempuan
+            </br>
+            Keahlian : 
+                <input type="checkbox" name ="keahlian" value="Game" /> Game
+                <input type="checkbox" name ="keahlian" value="Makan" checked /> Makan
+                <input type="checkbox" name ="keahlian" value="Badminton" /> Badminton
+            </br>
+            Tempat Lahir
+                <select name="tempat_lahir">
+                    <option value="Jakarta"> Jakarta</option>
+                    <option value="Bandung">Bandung</option>
+                    <option value="Bali">Bali</option>
+					<option value="Tegal"selected>Tegal</option>
+                </select>
+            </br>
+            Deskripsi Diri:
+                <textarea name="deskripsi" rows="5" cols="28">
+                </textarea>
+            </br>
+                <input type="submit" value="Enter">
+                <input type="reset" value="reset">
+        </form>
+    </body>
+	<script type="text/javascript">
+	function validasi() {
+		var nama = document.getElementById("nama").value;
+		var password = document.getElementById("password").value;
+		var Jenis Kelamin = document.getElementById("Jenis Kelamin").value;
+		var Keahlian = document.getElementById("Keahlian").value;
+		var Tempat Lahir = document.getElementById("Tempat Lahir").value;
+		var Deskripsi = document.getElementById("Deskripsi").value;
+		if (nama != "" && password!="" && Jenis_kelamin !="" && keahlian!="" && Tempat_Lahir!="" && Deskripsi!="") {
+			return true;
+		}else{
+			alert('Anda harus mengisi data dengan lengkap !');
+		}
+	}
+
+</html>

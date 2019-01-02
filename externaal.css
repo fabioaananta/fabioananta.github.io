@@ -1,0 +1,34 @@
+html,body{
+    background-image: blue;
+}
+hr{
+	color: blue;
+}
+div{
+	background-color:black;
+	border:5px solid navy;
+	padding:15px;
+	///padding:10px;
+	margin:25px;
+	//width:200;
+	text-align:center;
+	
+}
+img{
+	width: 200px;
+	height: 250px;
+	border: 4px solid navy;
+	padding: 5px;
+	margin: 20px;
+	
+}
+
+hh{
+	color: red;
+
+}
+p{
+	color: blue;
+	text-align: center;
+	
+}
